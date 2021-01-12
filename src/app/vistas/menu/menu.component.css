@@ -1,0 +1,89 @@
+.card{
+    margin-top: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    background-color: #222F42;
+    display: flex; /*para que los elementos sean cajas flexibles*/
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+.card > .menu > h1{
+    
+    margin-left: 42%;
+    color: white;
+}
+ol.even {
+    position: relative;
+    left: 5.45455rem;
+    }
+    
+    ol.odd {
+    position: relative;
+    margin-bottom: -4.5%;
+    }
+    
+    .hex {
+    position: relative;
+    margin: 1em auto;
+    width: 6rem;
+    height: 10.2rem;
+    background: #1e2530;
+    transform: rotate(-90deg);
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 4.61538rem;
+    transition: all 150ms ease-in-out;
+    z-index: 2;
+    }
+    
+    .hex:before, .hex:after {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    background: inherit;
+    content: "";
+    z-index: -1;
+    }
+    
+    .hex:before {
+    transform: rotate(60deg);
+    }
+    
+    .hex:after {
+    transform: rotate(-60deg);
+    }
+    
+    .hex:hover {
+    background: #003D6A;
+    cursor: pointer;
+    }
+
+    .hex .hex-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        
+        transform: translate(-50%, -50%) rotate(90deg);
+        
+        color: white;
+        }
+
+        #Library {
+            background-image: url(../../../assets/img/pc.svg);
+            height: 70px;
+            width: 120px;
+      }
+      
+      #Library:hover {
+            background-image: url(../../../assets/img/pc.svg);
+      }
+
+/*a partir de web, todo el contenido va a tener */
+@media (min-width:1024px){
+    .odd > .bloque2{
+            margin-left: 20%;
+    }
+
+}
+

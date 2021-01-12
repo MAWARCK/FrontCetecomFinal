@@ -1,0 +1,174 @@
+<div class="card bg-secondary card">
+    <div class="card-header header">
+      <h5 class="card-title">{{ titulo }}</h5>
+    </div>
+    <div class="card-body body">
+      <div class="card">
+        <div class="card-header">
+          Formulario de registro de PC
+        </div>
+        <div class="card-body">
+          <form class="needs-validation" novalidate>
+            <div class="form-row">
+              <div class="col-sm-6 mb-3">
+                <label for="validationTooltip01">Marca</label>
+                <input type="text" class="form-control" [(ngModel)]="pc.marca" name="marca" #marca="ngModel" id="validationTooltip01" placeholder="Lenovo" required>
+                <div class="valid-tooltip">
+                  Looks good!
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="validationTooltip02">Modelo</label>
+                <input type="text" class="form-control" [(ngModel)]="pc.modelo" name="modelo" #modelo="ngModel" id="validationTooltip02" placeholder="All in One" required>
+                <div class="valid-tooltip">
+                  Looks good!
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="validationTooltip02">N° Serie</label>
+                <input type="text" class="form-control" [(ngModel)]="pc.nserie" name="nserie" #modelo="ngModel" id="validationTooltip02" placeholder="DXDIAG4774455" required>
+                <div class="valid-tooltip">
+                  Looks good!
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="validationTooltip02">Cod Duoc</label>
+                <input type="text" class="form-control" [(ngModel)]="pc.cduoc" name="cduoc" #modelo="ngModel" id="validationTooltip02" placeholder="586654666668" required>
+                <div class="valid-tooltip">
+                  Looks good!
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <label for="validationTooltip02" style="margin-top: 15px;">Pc/Notebook</label>
+                <select class="custom-select">
+                  <option selected disabled>Seleccionar</option>
+                  <option value="PC">PC</option>
+                  <option value="Notebook">Notebook</option>
+                </select>
+              </div>
+              <div class="col-sm-4">
+                <label for="validationTooltip02" style="margin-top: 15px;">Ram</label>
+                <select class="custom-select">
+                  <option selected disabled>Seleccionar</option>
+                  <option value="4GB">4gb</option>
+                  <option value="5GB">5gb</option>
+                  <option value="6GB">6gb</option>
+                </select>
+              </div>
+              <div class="col-sm-4">
+                <label for="validationTooltip02" style="margin-top: 15px;">Tipo de Disco</label>
+                <select class="custom-select">
+                  <option selected disabled>Seleccionar</option>
+                  <option value="HDD">HDD</option>
+                  <option value="SSD">SSD</option>
+                </select>
+              </div>
+              <div class="col-sm-4">
+                <label for="validationTooltip02" style="margin-top: 15px;">Capacidad de Disco</label>
+                <select class="custom-select">
+                  <option selected disabled>Seleccionar</option>
+                  <option value="250GB">250gb</option>
+                  <option value="500GB">500gb</option>
+                  <option value="1TB">1tb</option>
+                  <option value="2TB">2tb</option>
+                </select>
+              </div>
+              <div class="col-sm-4">
+                <label for="validationTooltip02" style="margin-top: 15px;">Año</label>
+                <select class="custom-select">
+                  <option selected disabled>Seleccionar</option>
+                  <option value="2021">2021</option>
+                  <option value="2020">2022</option>
+                  <option value="2021">2021</option>
+                  <option value="2020">2020</option>
+                  <option value="2018">2019</option>
+                  <option value="2018">2018</option>
+                  <option value="2017">2017</option>
+                  <option value="2016">2016</option>
+                  <option value="2015">2015</option>
+                  <option value="2014">2014</option>
+                </select>
+              </div>
+              <div class="col-sm-4">
+                <label for="validationTooltip02" style="margin-top: 15px;">Laboratorio</label>
+                <select class="custom-select">
+                  <option selected disabled>Seleccionar</option>
+                  <option value="LPC1">LPC2</option>
+                  <option value="LPC2">LPC2</option>
+                  <option value="LPC2">LPC2</option>
+                  <option value="LPC2">LPC2</option>
+                  <option value="LPC2">LPC2</option>
+                  <option value="LPC2">LPC2</option>
+                  <option value="LPC2">LPC2</option>
+                  <option value="LPC2">LPC2</option>
+                  <option value="LPC2">LPC2</option>
+                  <option value="LPC2">LPC2</option>
+                  <option value="LPC2">LPC2</option>
+                  <option value="LPC2">LPC2</option>
+                  <option value="LPC2">LPC2</option>
+                  <option value="LPC2">LPC2</option>
+                  <option value="LPC2">LPC2</option>
+                  <option value="LPC2">LPC2</option>
+                  <option value="LPC2">LPC2</option>
+                  <option value="LPC2">LPC2</option>
+                  <option value="101">101</option>
+                  <option value="102">102</option>
+                  <option value="103">103</option>
+                  <option value="104">104</option>
+                  <option value="201">201</option>
+                  <option value="202">202</option>
+                  <option value="203">203</option>
+                  <option value="204">204</option>
+                  <option value="205">205</option>
+                  <option value="206">206</option>
+                  <option value="207">207</option>
+                  <option value="208">208</option>
+                  <option value="209">209</option>
+                  <option value="210">210</option>
+                  <option value="AutoTronica">AutoTronica</option>
+                  <option value="Sala de electricidad Lvl 1">Sala de electricidad lvl 1</option>
+                  <option value="Sala de electricidad lvl 2">Sala de electricidad lvl 2</option>
+                  <option value="Taller de motos">Taller de motos</option>
+                  <option value="Dinamometro">Dinamometro</option>
+                  <option value="Taller de cajas">Taller de cajas</option>
+                  <option value="Pañol mecanica">Pañol mecanica</option>
+                </select>
+              </div>
+              <div class="col-sm-4">
+                <label for="validationTooltip02" style="margin-top: 15px;">Area</label>
+                <select class="custom-select">
+                  <option selected disabled>Seleccionar</option>
+                  <option value="Administrativo">Administrativo</option>
+                  <option value="Academico">Academico</option>
+                </select>
+              </div>
+              <div class="col-sm-4">
+                <label for="validationTooltip02" style="margin-top: 15px;">Estado</label>
+                <select class="custom-select">
+                  <option selected disabled>Seleccionar</option>
+                  <option value="En uso">En uso</option>
+                  <option value="En bodega">En bodega</option>
+                  <option value="Bueno">Bueno</option>
+                  <option value="Malo">Malo</option>
+                  <option value="Revisar">Revisar</option>
+                  <option value="Dar de baja">Dar de baja</option>
+                  <option value="De baja">De baja</option>
+                </select>
+              </div>
+            </div>
+            <div class="my-2 text-left">
+              <button class="btn btn-rounded btn-info" type="button" [routerLink]="['/pcs']" routerLinkActive="router-link-active" >Volver a tabla</button>
+              <button class="btn btn-rounded btn-info" (click)="create()" routerLinkActive="router-link-active"  
+              *ngIf="!pc.id else elseBlock"  type="button">Agregar Equipo</button>
+               <!--el ng-template es donde ira el boton de actualizar-->
+              <ng-template #elseBlock>
+                <button class="btn btn-rounded btn-primary" type="button" >Actualizar</button>
+              </ng-template>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div> 
+  </div>
+  
+  
